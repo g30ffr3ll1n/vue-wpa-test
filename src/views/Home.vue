@@ -10,7 +10,8 @@
             :active="s == selectedSection"
             @click="
               selectedSection = s;
-              getAllArticles();"
+              getAllArticles();
+            "
             >{{ s }}</b-nav-item
           >
         </b-nav>
@@ -32,7 +33,8 @@
             (Array.isArray(a.multimedia) &&
               a.multimedia.length > 0 &&
               a.multimedia[a.multimedia.length - 1].url) ||
-              ''"
+              ''
+          "
           img-bottom
         >
           <b-card-text>

@@ -3,6 +3,7 @@
     <h1 class="text-center">Search</h1>
     <SearchLayout>
       <template v-slot:top>
+        // eslint-disable-next-line vue/no-unused-vars
         <ValidationObserver ref="observer" v-slot="{ invalid }">
           <b-form @submit.prevent="onSubmit" novalidate id="form">
             <b-form-group label="Keyword" label-for="keyword">
